@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L.A.F — Logan Armed Forces | Roblox Military & Political Community</title>
+  <meta name="description" content="Official website for Logan Armed Forces (L.A.F). A Roblox gaming community focused on military operations, politics, and diplomacy. Join us today!">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Smooth Scroll Container -->
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- Navigation -->
+      <nav id="navbar" class="navbar">
+        <div class="nav-container">
+          <a href="#home" class="nav-logo-link">
+            <img src="assets/logo.png" alt="L.A.F Logo" class="nav-logo-img">
+            <span class="nav-brand">L.A.F</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#why-join">Why Join</a></li>
+            <li><a href="#values">Values</a></li>
+            <li><a href="#join">Join</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="https://discord.gg/34rzCyG5Gw" target="_blank" rel="noopener noreferrer" class="btn btn-nav">JOIN DISCORD</a>
+            <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#why-join">Why Join</a></li>
+          <li><a href="#values">Values</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="https://discord.gg/34rzCyG5Gw" target="_blank" rel="noopener noreferrer" class="btn btn-discord-mobile">JOIN DISCORD</a></li>
+        </ul>
+      </div>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-bg-container">
+          <img src="assets/logo.png" alt="L.A.F Background Logo" class="hero-bg-logo">
+          <div class="hero-overlay"></div>
+          <canvas id="hero-particles"></canvas>
+        </div>
+        <div class="hero-content text-center">
+          <h2 class="hero-subtitle">L.A.F</h2>
+          <h1 class="hero-title">LOGAN ARMED FORCES</h1>
+          <p class="hero-tagline">Roblox Military & Political Gaming Community</p>
+          
+          <div class="hero-descriptions">
+            <p class="hero-desc-p">We are a Roblox gaming community operating on a daily basis, primarily focused on military games, with politics and diplomacy as our secondary focus.</p>
+            <p class="hero-desc-p">Our goal is simple: to create a fun, active and organized community that welcomes everyone, supports its members and helps those who need it.</p>
+          </div>
+
+          <div class="hero-cta-wrapper">
+            <p class="hero-highlight">So what are you waiting for? <span class="highlight-action">JOIN US RN!</span></p>
+            <div class="hero-buttons">
+              <a href="https://discord.gg/34rzCyG5Gw" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">JOIN THE DISCORD</a>
+              <a href="#about" class="btn btn-secondary">DISCOVER L.A.F</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom-fade"></div>
+      </section>
+
+      <!-- Who Are We Section -->
+      <section id="about" class="about-section">
+        <div class="about-grid container">
+          <div class="about-logo-wrapper">
+            <div class="logo-3d-container">
+              <img src="assets/logo.png" alt="L.A.F Rotating Insignia" class="about-logo-rotating">
+            </div>
+            <div class="logo-glow-effect"></div>
+          </div>
+          <div class="about-text-content">
+            <h2 class="section-title text-glow">WHO ARE WE?</h2>
+            <div class="about-body">
+              <p class="about-p highlighted-p"><strong>Logan Armed Forces — L.A.F</strong> is an active Roblox gaming community built around military gaming, teamwork, organization, diplomacy and community interaction.</p>
+              <p class="about-p">Our members participate in military games, organized activities, events, training, operations and community projects.</p>
+              <p class="about-p">Politics and diplomacy also play an important secondary role within L.A.F, allowing our members to experience leadership, alliances, negotiations and strategic decision-making.</p>
+              <p class="about-p">But above everything else, L.A.F exists to build an active community where people can play, communicate, improve and enjoy their time together.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Do Section -->
+      <section id="activities" class="activities-section">
+        <div class="container">
+          <h2 class="section-title text-center text-glow">WHAT WE DO</h2>
+          <div class="activities-grid">
+            
+            <!-- Card 1 -->
+            <div class="activity-card" id="act-1">
+              <div class="card-glow"></div>
+              <div class="card-border"></div>
+              <div class="card-content">
+                <div class="card-icon-wrapper">
+                  <!-- Tactical Target / Shield SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="card-title">MILITARY GAMING</h3>
+                <p class="card-description">Participate in Roblox military games, organized operations, training sessions and community activities.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="activity-card" id="act-2">
+              <div class="card-glow"></div>
+              <div class="card-border"></div>
+              <div class="card-content">
+                <div class="card-icon-wrapper">
+                  <!-- Daily / Calendar Event SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <h3 class="card-title">DAILY ACTIVITY</h3>
+                <p class="card-description">L.A.F operates on a regular basis with members, staff and events helping keep the community alive and active.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="activity-card" id="act-3">
+              <div class="card-glow"></div>
+              <div class="card-border"></div>
+              <div class="card-content">
+                <div class="card-icon-wrapper">
+                  <!-- Diplomacy / Globe SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3 class="card-title">DIPLOMACY</h3>
+                <p class="card-description">Interact with other communities, form alliances, negotiate agreements and experience organized diplomacy.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="activity-card" id="act-4">
+              <div class="card-glow"></div>
+              <div class="card-border"></div>
+              <div class="card-content">
+                <div class="card-icon-wrapper">
+                  <!-- Politics / Scales/Podium SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="card-title">POLITICS</h3>
+                <p class="card-description">Take part in the political and leadership side of the community and develop your ability to organize, communicate and lead.</p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="activity-card" id="act-5">
+              <div class="card-glow"></div>
+              <div class="card-border"></div>
+              <div class="card-content">
+                <div class="card-icon-wrapper">
+                  <!-- Community / Users SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="card-title">COMMUNITY</h3>
+                <p class="card-description">Meet new people, make friends and become part of a group that values activity and teamwork.</p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="activity-card" id="act-6">
+              <div class="card-glow"></div>
+              <div class="card-border"></div>
+              <div class="card-content">
+                <div class="card-icon-wrapper">
+                  <!-- Support / Heart SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <h3 class="card-title">SUPPORT</h3>
+                <p class="card-description">L.A.F believes strong communities help their members. New and inexperienced players should have opportunities to learn, improve and become stronger.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Join Us Section -->
+      <section id="why-join" class="why-join-section">
+        <div class="container">
+          <h2 class="section-title text-center text-glow">WHY JOIN US?</h2>
+          <div class="why-join-grid">
+            
+            <!-- Panel 01 -->
+            <div class="join-panel">
+              <div class="panel-num">01</div>
+              <div class="panel-content">
+                <h3 class="panel-title">ACTIVE COMMUNITY</h3>
+                <p class="panel-desc">We aim to maintain regular activity instead of becoming another inactive Roblox group.</p>
+              </div>
+            </div>
+
+            <!-- Panel 02 -->
+            <div class="join-panel">
+              <div class="panel-num">02</div>
+              <div class="panel-content">
+                <h3 class="panel-title">EVERYONE IS WELCOME</h3>
+                <p class="panel-desc">Whether you're experienced or completely new, there is a place for you inside L.A.F.</p>
+              </div>
+            </div>
+
+            <!-- Panel 03 -->
+            <div class="join-panel">
+              <div class="panel-num">03</div>
+              <div class="panel-content">
+                <h3 class="panel-title">MILITARY EXPERIENCE</h3>
+                <p class="panel-desc">Participate in military games, operations, training and organized events.</p>
+              </div>
+            </div>
+
+            <!-- Panel 04 -->
+            <div class="join-panel">
+              <div class="panel-num">04</div>
+              <div class="panel-content">
+                <h3 class="panel-title">LEADERSHIP OPPORTUNITIES</h3>
+                <p class="panel-desc">Active and dedicated members can work their way into positions with greater responsibility.</p>
+              </div>
+            </div>
+
+            <!-- Panel 05 -->
+            <div class="join-panel">
+              <div class="panel-num">05</div>
+              <div class="panel-content">
+                <h3 class="panel-title">POLITICS & DIPLOMACY</h3>
+                <p class="panel-desc">Military gameplay isn't everything. Members interested in politics, diplomacy and leadership can explore that side of L.A.F as well.</p>
+              </div>
+            </div>
+
+            <!-- Panel 06 -->
+            <div class="join-panel">
+              <div class="panel-num">06</div>
+              <div class="panel-content">
+                <h3 class="panel-title">TEAMWORK</h3>
+                <p class="panel-desc">Work together with other members instead of playing alone.</p>
+              </div>
+            </div>
+
+            <!-- Panel 07 -->
+            <div class="join-panel">
+              <div class="panel-num">07</div>
+              <div class="panel-content">
+                <h3 class="panel-title">GROW WITH THE COMMUNITY</h3>
+                <p class="panel-desc">As L.A.F expands, early and active members can become an important part of its development.</p>
+              </div>
+            </div>
+
+            <!-- Panel 08 -->
+            <div class="join-panel">
+              <div class="panel-num">08</div>
+              <div class="panel-content">
+                <h3 class="panel-title">EVENTS & ACTIVITIES</h3>
+                <p class="panel-desc">Participate in community events, games, training sessions and organized activities.</p>
+              </div>
+            </div>
+
+            <!-- Panel 09 -->
+            <div class="join-panel">
+              <div class="panel-num">09</div>
+              <div class="panel-content">
+                <h3 class="panel-title">HELPING OTHERS</h3>
+                <p class="panel-desc">We believe strength means helping weaker or less experienced members improve rather than excluding them.</p>
+              </div>
+            </div>
+
+            <!-- Panel 10 -->
+            <div class="join-panel">
+              <div class="panel-num">10</div>
+              <div class="panel-content">
+                <h3 class="panel-title">BE PART OF SOMETHING</h3>
+                <p class="panel-desc">Join a developing Roblox organization and help shape what L.A.F becomes in the future.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Values Section -->
+      <section id="values" class="values-section">
+        <div class="container">
+          <h2 class="section-title text-center text-glow">OUR VALUES</h2>
+          <div class="values-grid">
+            
+            <!-- Value Block 1 -->
+            <div class="value-block">
+              <div class="value-corner top-left"></div>
+              <div class="value-corner bottom-right"></div>
+              <h3 class="value-title">ACTIVITY</h3>
+              <p class="value-desc">A community survives through participation. We encourage members to remain involved and contribute.</p>
+            </div>
+
+            <!-- Value Block 2 -->
+            <div class="value-block">
+              <div class="value-corner top-left"></div>
+              <div class="value-corner bottom-right"></div>
+              <h3 class="value-title">TEAMWORK</h3>
+              <p class="value-desc">Members should be able to cooperate, communicate and achieve goals together.</p>
+            </div>
+
+            <!-- Value Block 3 -->
+            <div class="value-block">
+              <div class="value-corner top-left"></div>
+              <div class="value-corner bottom-right"></div>
+              <h3 class="value-title">RESPECT</h3>
+              <p class="value-desc">Competition can be intense, but members should still treat each other with respect.</p>
+            </div>
+
+            <!-- Value Block 4 -->
+            <div class="value-block">
+              <div class="value-corner top-left"></div>
+              <div class="value-corner bottom-right"></div>
+              <h3 class="value-title">STRENGTH THROUGH UNITY</h3>
+              <p class="value-desc">L.A.F grows when its members work together and support the community.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Military & Diplomacy Section (Tactical & Standout Slogan) -->
+      <section class="mil-dip-section">
+        <div class="tactical-grid-bg"></div>
+        <div class="container">
+          <h2 class="mil-dip-title text-center">TWO SIDES. ONE COMMUNITY.</h2>
+          
+          <div class="mil-dip-split">
+            
+            <!-- Military Panel -->
+            <div class="tactical-panel mil-side">
+              <div class="tactical-header">
+                <span class="tactical-status">SECURE FEED // ACTIVE</span>
+                <span class="tactical-dot"></span>
+              </div>
+              <h3 class="tactical-title">MILITARY</h3>
+              <ul class="tactical-list">
+                <li><span class="list-marker">#</span> Operations</li>
+                <li><span class="list-marker">#</span> Training</li>
+                <li><span class="list-marker">#</span> Military Roblox Games</li>
+                <li><span class="list-marker">#</span> Teamwork</li>
+                <li><span class="list-marker">#</span> Organization</li>
+                <li><span class="list-marker">#</span> Strategy</li>
+              </ul>
+              <div class="tactical-footer">DIVISION_A // COMBAT_READY</div>
+            </div>
+
+            <!-- Diplomacy Panel -->
+            <div class="tactical-panel dip-side">
+              <div class="tactical-header">
+                <span class="tactical-status">SECURE FEED // ACTIVE</span>
+                <span class="tactical-dot dot-diplomacy"></span>
+              </div>
+              <h3 class="tactical-title">DIPLOMACY</h3>
+              <ul class="tactical-list">
+                <li><span class="list-marker">#</span> Politics</li>
+                <li><span class="list-marker">#</span> Negotiations</li>
+                <li><span class="list-marker">#</span> Alliances</li>
+                <li><span class="list-marker">#</span> Leadership</li>
+                <li><span class="list-marker">#</span> Partnerships</li>
+                <li><span class="list-marker">#</span> Strategy</li>
+              </ul>
+              <div class="tactical-footer">DIVISION_B // INTEL_CORPS</div>
+            </div>
+
+          </div>
+
+          <!-- Standout Visual Slogan -->
+          <div class="standout-slogan-wrapper text-center">
+            <p class="tactical-sub">LOGAN ARMED FORCES MISSION STATEMENT</p>
+            <h2 class="standout-slogan">"WITH GUNS AND DIPLOMACY, EVERYTHING IS POSSIBLE."</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Join Section -->
+      <section id="join" class="join-section">
+        <div class="join-bg-container">
+          <img src="assets/logo.png" alt="L.A.F Logo Background" class="join-bg-logo">
+          <div class="join-overlay"></div>
+        </div>
+        <div class="join-content text-center container">
+          <h2 class="join-title">READY TO JOIN?</h2>
+          <p class="join-subtitle">Become part of Logan Armed Forces today.</p>
+          
+          <div class="join-pillars">
+            <span class="pillar">Fight.</span>
+            <span class="pillar-divider">//</span>
+            <span class="pillar">Lead.</span>
+            <span class="pillar-divider">//</span>
+            <span class="pillar">Negotiate.</span>
+            <span class="pillar-divider">//</span>
+            <span class="pillar">Build.</span>
+          </div>
+
+          <!-- Standout Slogan Recur -->
+          <p class="join-slogan-repeat">"WITH GUNS AND DIPLOMACY, EVERYTHING IS POSSIBLE."</p>
+
+          <div class="join-cta-box">
+            <a href="https://discord.gg/34rzCyG5Gw" target="_blank" rel="noopener noreferrer" class="btn btn-huge btn-glow">JOIN L.A.F NOW</a>
+            <div class="join-discord-link-line">
+              <span class="discord-label">Discord Server:</span>
+              <a href="https://discord.gg/34rzCyG5Gw" target="_blank" rel="noopener noreferrer" class="discord-url">https://discord.gg/34rzCyG5Gw</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container container">
+          <div class="footer-left">
+            <div class="footer-brand">
+              <img src="assets/logo.png" alt="L.A.F Logo" class="footer-logo">
+              <div>
+                <h3 class="footer-title">L.A.F — Logan Armed Forces</h3>
+                <p class="footer-subtitle">Roblox Gaming Community</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-center">
+            <ul class="footer-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#activities">Activities</a></li>
+              <li><a href="#why-join">Why Join</a></li>
+              <li><a href="#values">Values</a></li>
+              <li><a href="#join">Join</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-right">
+            <p class="footer-discord-text">Discord: <a href="https://discord.gg/34rzCyG5Gw" target="_blank" rel="noopener noreferrer">https://discord.gg/34rzCyG5Gw</a></p>
+            <p class="copyright">© Logan Armed Forces. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Lenis for Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
